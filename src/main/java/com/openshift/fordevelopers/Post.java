@@ -24,13 +24,13 @@ public class Post extends PanacheMongoEntity {
     }
 
     public String getTitle() {
-        return this.title;
-        //return new StringBuilder(title).reverse().toString(); // Should be: return title;
+        //return this.title;
+        return new StringBuilder(title).reverse().toString(); // Should be: return title;
     }
 
     public String getContent() {
-        return this.content;
-        //return new StringBuilder(content).reverse().toString(); // Should be: return content;
+        //return this.content;
+        return new StringBuilder(content).reverse().toString(); // Should be: return content;
     }
     public Long getTimestamp() {
         return timestamp;
